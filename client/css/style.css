@@ -1,0 +1,197 @@
+@media only screen and (min-width: 768px) {
+ #tt {
+   color: red;
+ }
+}
+@media only screen and (max-width: 480px) {
+ #tt {
+   color: #123456;
+ }
+}
+html,
+body {
+ background-color: #fff;
+ color: #636b6f;
+ font-size: 16px;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 100;
+ height: 100vh;
+ margin: 0;
+}
+.content {
+ padding-top: 55px;
+ text-align: center;
+}
+.nav-tabs {
+ border-bottom: none;
+}
+.tab-gender {
+ padding-bottom: 10px;
+}
+.tab-gender li {
+ border: 1px solid #0BABA6;
+ border-radius: 22px 0px 0px 22px;
+ width: 50%;
+}
+.tab-gender li:nth-child(2) {
+ border-radius: 0px 22px 22px 0px;
+}
+.tab-gender li a {
+ text-align: center;
+ margin: 0px;
+ color: #8F8F8F;
+}
+.tab-gender > li.active > a,
+.tab-gender > li.active > a:focus,
+.tab-gender > li.active > a:hover {
+ color: white;
+ text-decoration: none;
+ border: 1px solid #0BABA6;
+ border-radius: 20px 0px 0px 20px;
+ background-color: #0BABA6;
+}
+.tab-gender > li > a:hover {
+ border: 1px solid transparent;
+ background-color: transparent;
+}
+.tab-gender > li > a:focus {
+ text-decoration: none;
+ color: white;
+}
+.tab-gender > li > a:focus:nth-child(1) {
+ border-radius: 20px 0px 0px 20px;
+ background-color: #0BABA6;
+}
+.tab-gender > li > a:focus:nth-child(2) {
+ border-radius: 0px 20px 20px 0px;
+ background-color: #0BABA6;
+}
+.tab-age {
+ margin-top: 10px;
+ padding-bottom: 10px;
+}
+.tab-age li {
+ width: 33%;
+}
+.tab-age > li.active > a,
+.tab-age > li.active > a:focus,
+.tab-age > li.active > a:hover {
+ border: none;
+ background-color: transparent;
+ color: #0BABA6;
+ border-bottom: 1px solid #0BABA6;
+}
+.tab-age li a {
+ text-align: center;
+ color: #8F8F8F;
+}
+.tab-age > li > a:hover {
+ background-color: transparent;
+ border: none;
+}
+.tab-age > li > a:focus {
+ background-color: transparent;
+ color: #0BABA6;
+ border-bottom: 1px solid #0BABA6;
+}
+#subtile {
+ padding-top: 16px;
+ margin-bottom: 22px;
+}
+.table_score {
+ color: black;
+ margin-top: 55px;
+ text-align: center;
+}
+.table-scroll {
+ position: relative;
+ max-width: 100%;
+ margin: auto;
+ overflow: hidden;
+}
+@media only screen and (max-width: 480px) {
+ .table-scroll {
+   margin-left: -15px;
+   margin-right: -15px;
+ }
+}
+.table-wrap {
+ width: 100%;
+ overflow: auto;
+}
+.table-scroll table {
+ width: 100%;
+ margin: auto;
+}
+.table-scroll th,
+.table-scroll td {
+ padding: 10px 10px;
+ border: 0.25px solid #8F8F8F;
+ background: #fff;
+ white-space: nowrap;
+ vertical-align: top;
+}
+.clone {
+ position: absolute;
+ top: 0;
+ left: 0;
+ pointer-events: none;
+}
+.clone th,
+.clone td {
+ visibility: hidden;
+}
+.clone td,
+.clone th {
+ border-color: transparent;
+}
+.clone tbody th {
+ text-align: center;
+ visibility: visible;
+}
+.clone .fixed-side {
+ border: 0.25px solid #8F8F8F;
+ visibility: visible;
+}
+.player {
+ overflow: hidden;
+ position: relative;
+}
+.info-user {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: horizontal;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: row;
+         flex-direction: row;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+}
+.info-user img {
+ max-width: 64px;
+ height: auto;
+}
+@media only screen and (max-width: 480px) {
+ .info-user img {
+   max-width: 30px;
+   height: auto;
+ }
+}
+.info-user .info {
+ font-size: 12px;
+ padding-left: 4px;
+}
+.info-user .index-player {
+ background-color: #0BABA6;
+ position: absolute;
+ bottom: -10px;
+ right: 0px;
+ padding: 2px 10px;
+ font-size: 17px;
+ color: white;
+}

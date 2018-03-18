@@ -1,0 +1,10 @@
+<template name="player">
+    <tr class="header-table">
+        <th class="fixed-side">{{name}}</th>
+        {{#each holeDetails}} 
+            <td>{{par}}</td>
+        {{/each}}
+        <td>{{over}}</td>
+        <td>{{total}}</td>
+    </tr>
+</template>
