@@ -1,0 +1,52 @@
+<template name="edit">
+
+    <body>
+        <div class="container">
+            <div class="content center">
+                <form class="search-player">
+                    <input type="text" name="text" id="search_vga" placeholder="Enter VGA code" />
+                    <input type="submit" />
+                </form>
+
+                 {{#with player}}
+                    <form class="update-player">
+                        <h2>{{name}}</h2>
+                        <input type="hidden" id="vgaCode" name="vgaCode" value="{{VGACode}}" />
+                        <table>
+                            <thead>
+                                <tr class="header-table">
+                                    <th class="fixed-side">Hole</th>
+                                    <th class="fixed-side">R1</th>
+                                    <th class="fixed-side">R2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                 {{#each holeDetails}}
+                                    <tr>
+                                        <td>{{showIndex @index}}</td>
+                                        <td>
+                                            <input type="text" id="r1_h{{@index}}" name="r1_h{{@index}}" maxlength="2" value={{par1}} />
+                                        </td>
+                                        <td>
+                                            <input type="text" id="r2_h{{@index}}" name="r2_h{{@index}}" maxlength="2" value={{par2}} />
+                                        </td>
+                                    </tr>
+                                 {{/each}}
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" />
+                                        <input type="reset" />
+                                    </td>
+                                    <td>
+                    
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                 {{/with}}
+            </div>
+        </div>
+    </body>
+</template>

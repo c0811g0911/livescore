@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating';
 
-import './player.html';
+import './playerView.html';
 import './score.html';
 
-Template.player.helpers({});
+Template.playerView.helpers({});

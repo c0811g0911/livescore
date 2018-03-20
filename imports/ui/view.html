@@ -10,23 +10,23 @@
             </div>
 
             <ul class="nav nav-tabs tab-gender">
-                <li class="active">
-                    <a href="#menu1">Nam</a>
+                <li>
+                    <a href="#menu1" id="search_male">Nam</a>
                 </li>
                 <li>
-                    <a href="#menu2">Nữ</a>
+                    <a href="#menu2" id="search_female">Nữ</a>
                 </li>
             </ul>
 
             <ul class="nav nav-tabs tab-age">
-                <li class="active">
-                    <a href="#menu1">Toàn bảng</a>
+                <li>
+                    <a href="#menu1" id="search_type_all">Toàn bảng</a>
                 </li>
                 <li>
-                    <a href="#menu2">Trung niên</a>
+                    <a href="#menu2" id="search_type_0">Trung niên</a>
                 </li>
                 <li>
-                    <a href="#menu3">Cao niên</a>
+                    <a href="#menu3" id="search_type_1">Cao niên</a>
                 </li>
             </ul>
 
@@ -80,7 +80,7 @@
                                 <td>71</td>
                                 <td>142</td>
                             </tr>
-                            {{#each players}} {{> player}} {{/each}}
+                            {{#each players}} {{> playerView}} {{/each}}
                         </tbody>
                     </table>
                 </div>
