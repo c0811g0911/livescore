@@ -1,0 +1,91 @@
+<template name="editPage">
+
+    <body>
+        <div class="container">
+            <div class="content center">
+                <h1>VHandicap</h1>
+
+                <h3 id="subtile">
+                    <strong>Livescore: Giải vô địch golf trung niên quốc gia</strong>
+                </h3>
+            </div>
+
+            <ul class="nav nav-tabs tab-gender">
+                <li>
+                    <a href="#menu1" id="search_male">Nam</a>
+                </li>
+                <li>
+                    <a href="#menu2" id="search_female">Nữ</a>
+                </li>
+            </ul>
+
+            <ul class="nav nav-tabs tab-age">
+                <li>
+                    <a href="#menu1" id="search_type_all">Toàn bảng</a>
+                </li>
+                <li>
+                    <a href="#menu2" id="search_type_0">Trung niên</a>
+                </li>
+                <li>
+                    <a href="#menu3" id="search_type_1">Cao niên</a>
+                </li>
+            </ul>
+
+            <div id="table-scroll" class="table-scroll">
+                <div class="table-wrap">
+                    <table class="main-table table-responsive table_score">
+                        <tbody>
+                            <tr class="header-table">
+                                <th class="fixed-side">Hole</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>R1</td>
+                                <td>Overall</td>
+                            </tr>
+                            <tr class="header-table">
+                                <th class="fixed-side">Par</th>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>71</td>
+                                <td>142</td>
+                            </tr>
+                            {{#each players}} {{> playerEdit}} {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</template>

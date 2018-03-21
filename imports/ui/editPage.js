@@ -3,16 +3,16 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 
 import { Players } from '../api/players.js';
 
-import './view.html';
+import './editPage.html';
 
-import './playerView.html';
+import './playerEdit.html';
 
 
-Template.view.onCreated(function bodyOnCreated() {
+Template.editPage.onCreated(function bodyOnCreated() {
     this.state = new ReactiveDict();
 });
 
-Template.view.helpers({
+Template.editPage.helpers({
     players() {
 
         /**
@@ -20,15 +20,15 @@ Template.view.helpers({
          * All : -1  TrungNien:0 CaoNien:1
          */
         let search = {
-            sex : '0'
+            sex: '0'
         };
 
         const instance = Template.instance();
 
-        if(instance.state.get('type')){
-            if (instance.state.get('type') == "-1"){
+        if (instance.state.get('type')) {
+            if (instance.state.get('type') == "-1") {
                 search = {};
-            }else{
+            } else {
                 search = _.extend(search, {
                     type: instance.state.get('type')
                 });
@@ -40,12 +40,12 @@ Template.view.helpers({
                 sex: instance.state.get('sex')
             });
         }
-        
+
         return Players.find(search, { sort: { total: -1 } });
     }
 });
 
-Template.view.events({
+Template.editPage.events({
     'click #search_male'(event, instance) {
         instance.state.set('sex', "0");
     },

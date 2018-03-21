@@ -1,0 +1,12 @@
+<template name="playerEdit">
+    <tr class="header-table">
+        <th class="fixed-side">{{name}}</th>
+        {{#each holeDetails}}
+        <td>
+             {{> contenteditable content=par1 code=../code round=1 hole=@index}}
+        </td>
+        {{/each}}
+        <td>{{over1}}</td>
+        <td>{{total1}}</td>
+    </tr>
+</template>
